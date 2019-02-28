@@ -1,0 +1,305 @@
+body{
+    background-color: #FAFAFA;
+}
+
+@font-face {
+    font-family: 'billabong';
+    src: url('fonts/Billabong-Font/Billabong.ttf');
+    font-weight: bold;
+}
+
+#header{
+    padding: 13px;
+    font-size: 22px;
+    background-color: white;
+    height: 77px;
+    position: fixed;
+    right: 0;
+    top: 0;
+    left: 0;
+}
+
+#header a {
+    color: #262626;
+}
+
+#content{
+    width: 900px;
+    margin: 88px auto;
+}
+
+.navbar-brand {
+    font-family: 'billabong';
+    padding-left: 10px; 
+    font-size: 2.0rem;
+    letter-spacing: 1.2px;
+
+}
+
+.fa-instagram:before {
+    margin-top: 20px;
+    content: "\f16d";
+    font-size: 29px;
+    padding-right: 20px;
+    border-right: 0.5px solid;
+}
+
+.form-control{
+    height: 28px;
+    background-color: #FAFAFA;
+    min-width: 125px;
+    width: 215px;
+}
+
+.watch_all{
+    float: right;
+    color: #262626;
+    font-size: 14px;
+}
+
+.logo{
+    margin-left: -25px;
+}
+
+.items{
+    margin-right: -25px;
+}
+
+/* Placeholder centered */
+::-webkit-input-placeholder {
+    font-size: 14px;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-weight: 100;
+    text-align: center;
+ }
+ 
+ :-moz-placeholder { /* Firefox 18- */
+    font-size: 14px;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-weight: 100;
+    text-align: center;  
+ }
+ 
+ ::-moz-placeholder {  /* Firefox 19+ */
+    font-size: 14px;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-weight: 100;
+    text-align: center;  
+ }
+ 
+ :-ms-input-placeholder {  
+    font-size: 14px;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-weight: 100;
+    text-align: center; 
+ }
+
+.img-fill{
+    display: block; width: 100%; height: auto;
+}
+
+.card{
+    margin-top: 60px;
+}
+
+#card-body {
+    padding-top: 11px;
+
+}
+
+.card-body {
+    padding: 11px 0 0 0;
+
+}
+
+.user-name{
+    display: inline-block;
+    font-size: 14px;
+}
+
+.card-title {
+    color: #262626;
+    font-weight: 600;
+    font-size: 14px;
+    margin-left: 10px;
+    display: inline;
+}
+.stories-title {
+    display: inline;
+    font-size: 14px;
+    color: #999999;
+}
+
+.stories-users{
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+.card-body h5{
+    display: inline-block;
+    font-size: 14px;
+}
+
+.card-top{
+    padding: 0px 0 10px 20px;
+}
+
+
+.thumbnail {
+    border: 0 none;
+    box-shadow: none;
+    background-size:cover;
+}
+
+.img-user{
+    width: 30px;
+    height:30px;
+}
+
+#current-user{
+    position: fixed;
+    top: 146px;
+}
+
+#current-user .img-user{
+    width: 51px;
+    height: 51px;
+}
+
+.current-user h5{
+    display: inline;
+}
+
+.stories-body{
+    max-height: 163px;
+    overflow: scroll;
+}
+
+.stories-header{
+    margin-left: 10px;
+    margin-right: 10px; 
+    margin-bottom: 15px;
+}
+
+.img-users{
+    width: 30px;
+    height:30px;
+    display: block;
+}
+
+
+#stories{
+    margin-top: 66px;
+}
+
+#suggestions{
+    margin-top: 294px;
+}
+
+#suggestions button{
+    float: right;
+    margin-right: 13px;
+    margin-top: -30px;
+    color: #3897f0;
+    font-size: 13px;
+    font-weight: 500;
+    background: none;
+    border: none;
+
+}
+
+
+.icon i{
+    font-size: 23px;
+    margin-top: 10px;
+    font-weight: 100;
+    margin-left: 8px;
+    margin-bottom: 10px;
+}
+
+.fa-bookmark{
+    float: right;
+    margin-right: 20px;
+}
+
+.likes{
+    margin-top: 1px;
+}
+
+.like-user  {
+    height: 19px;
+    width: 19px;
+    margin-left: 15px;
+}
+
+.comment{
+    margin-left: 16px;
+}
+
+.more-comments{
+    color: #999999;
+    display: block;
+    font-size: 14px;
+}
+
+.comment-title-user{
+    display: inline;
+    font-size: 14px;
+}
+
+.users-comments{
+    font-size: 14px;
+}
+
+.time{
+    color: #999999;
+    display: block;
+    font-size: 14px;
+}
+
+.comments-form input{
+    border: none;
+    margin-bottom: 14px;
+}
+
+.comments-form i{
+    float: right;
+    margin-top: 6px;
+    margin-right: 18px;
+}
+
+.stories-time{
+    color: #999999;
+    display: block;
+    margin-left: 43px;
+    font-size: 12px;
+    margin-top: -8px;
+}
+
+.title-name{
+    color: #999999;
+    display: block;
+    margin-left: 65px;
+    font-size: 12px;
+    margin-top: -17px;
+}
+
+#footer{
+    /* margin-top: 95px; */
+    position: fixed;
+    top: 653px;
+ 
+}
+
+#footer a{
+    font-size: 11px;
+    color: #c7c7c7;
+}
+
+#footer > div{
+   width: 289px;
+}

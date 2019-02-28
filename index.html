@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Instagram</title>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link href="style.css" type="text/css" rel="stylesheet">
+    </head>
+    <body>
+        <nav class="navbar fixed-top">
+            <div id="header">
+                <div class="d-flex justify-content-around">
+                    <div class="d-flex logo">
+                            <a class="nav-item nav-link" href="#"><i class="fab fa-instagram"></i></a>
+                            <a class="navbar-brand" href="#">Instagram</a>
+                    </div>
+                    
+                    <form class="form-inline has-feedback">
+                        <input class="form-control mr-sm-2 empty" type="text" placeholder="&#x1F50D; Search" aria-label="Search">
+                    </form>
+
+                    <div class="d-flex items">
+                        <a class="nav-item nav-link" href="#"><i class="far fa-compass"></i></a>
+                        <a class="nav-item nav-link" href="#"><i class="far fa-heart"></i></a>
+                        <a class="nav-item nav-link" href="#"><i class="far fa-user"></i></a>
+                    </div>
+
+                </div>
+            </div>
+        </nav>
+
+        <div class="container">
+            <div id="content">
+                <div class="row">
+                    <!-- Users pictures -->
+                    <div class="col-sm-12 col-md-12 col-lg-8">
+                        <div class="">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="card-top">
+                                        <img src="https://yt3.ggpht.com/a-/AAuE7mCmAV0ThJXL7n9dl93TZss2P4siR7dvCUAqTw=s900-mo-c-c0xffffffff-rj-k-no" class="img-user rounded-circle" alt="Cinque Terre">
+                                        <h5 class="card-title">mkbhd</h5>
+                                    </div>
+                                    
+                                    <div class="image-container">
+                                        <div class="img-fluid">
+                                                <img class="img-fill" src="https://images.unsplash.com/photo-1530986380366-2c4caefe7e4b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1567&q=80" class="" alt="...">
+                                        </div>
+                                    </div>
+                                    <div class="action">
+                                        <div class="icon">
+                                            <i class="far fa-heart"></i>
+                                            <i class="far fa-comment"></i>
+                                            <i class="far fa-share-square"></i>
+                                            <i class="far fa-bookmark"></i>
+                                        </div>
+                                        <div class="likes">
+                                                <img src="https://yt3.ggpht.com/a-/AAuE7mCmAV0ThJXL7n9dl93TZss2P4siR7dvCUAqTw=s900-mo-c-c0xffffffff-rj-k-no" class="like-user rounded-circle" alt="Cinque Terre">
+                                                <span>Liked by</span>
+                                                <h5 class="like-title">mbustamante</h5>
+                                                <span>and</span>
+                                                <span>104 others</span>
+                                               
+                                        </div>
+                                        <div class="comment">
+                                                <h5 class="comment-title">mkbhd</h5>
+                                                <span>I loved this vaccation in Iceland with my familly</span>
+                                                <span class="more-comments">Load more comments</span>
+                                                <div class="users-comments">                                                 
+                                                    <h4 class="comment-title-user">cbustamante</h4>
+                                                    <span>Amazing</span>
+                                                </div>
+                                                <div class="users-comments">                                                 
+                                                    <h4 class="comment-title-user">rafaelcostac3</h4>
+                                                    <span>Enjoy my friend</span>
+                                                </div>
+                                                <div class="users-comments">                                                 
+                                                    <h4 class="comment-title-user">ale_ferzs</h4>
+                                                    <span>Such an amazing familly</span>
+                                                </div>
+                                                <div class="users-comments">                                                 
+                                                    <h4 class="comment-title-user">anabiabreu</h4>
+                                                    <span>I miss you guys. Enjoy!</span>
+                                                </div>
+                                                <span class="time">1 hour ago</span>
+                                                <hr>     
+                                        </div>
+                                        <form class="comments-form">
+                                            <input type="text" placeholder="Add a comment..." />
+                                            <i class="fas fa-ellipsis-h"></i>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Side bar with current user and stories -->
+                    <div class="col-sm-12 col-md-12 col-lg-4">
+                        <div id="current-user">
+                            <img src="data:image/jpeg;base64,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" class="img-user rounded-circle" alt="Cinque Terre">
+                            <h5 class="card-title">mathbustamante</h5>
+                            <span class="title-name">Matheus Bustamante</span>
+                        </div>
+                        <div id="stories">
+                            <div class="card position-fixed">
+                                    <div class="side-card" style="width: 18rem;">
+                                        <div id="card-body">
+                                            <div class="stories-header">
+                                                <h5 class="stories-title">Stories</h5>
+                                                <a class="watch_all" href="#">Watch All</a>
+                                            </div>
+                                            <div class="stories-body">
+                                                <div class="stories-users">
+                                                    <img src="https://images.unsplash.com/photo-1467400492058-1aad44d4bcd6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2090&q=80" class="img-user rounded-circle" alt="Cinque Terre">
+                                                    <h5 class="card-title">pedrobethem</h5>
+                                                    <span class="stories-time">1 Hour ago</span>
+                                                </div>
+                                                <div class="stories-users">
+                                                    <img src="https://images.unsplash.com/photo-1483323323858-4916bde7bd5d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=668&q=80" class="img-user rounded-circle" alt="Cinque Terre">
+                                                    <h5 class="card-title">italoabreus</h5>
+                                                    <span class="stories-time">1 Hour ago</span>
+                                                </div>
+                                                <div class="stories-users">
+                                                    <img src="https://images.unsplash.com/photo-1470441623172-c47235e287ee?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1652&q=80" class="img-user rounded-circle" alt="Cinque Terre">
+                                                    <h5 class="card-title">marcellalassi</h5>
+                                                    <span class="stories-time">2 Hour ago</span>
+                                                </div>
+                                                <div class="stories-users">
+                                                    <img src="https://images.unsplash.com/photo-1478070531059-3db579c041d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80" class="img-user rounded-circle" alt="Cinque Terre">
+                                                    <h5 class="card-title">giolianacarv</h5>
+                                                    <span class="stories-time">3 Hour ago</span>
+                                                </div>
+                                                <div class="stories-users">
+                                                    <img src="https://images.unsplash.com/photo-1441486374104-36abe5ed9b69?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80" class="img-user rounded-circle" alt="Cinque Terre">
+                                                    <h5 class="card-title">astridmnr</h5>
+                                                    <span class="stories-time">4 Hour ago</span>
+                                                </div>
+                                                <div class="stories-users">
+                                                    <img src="https://images.unsplash.com/photo-1470500507674-2cbd7f1a08ea?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1652&q=80" class="img-user rounded-circle" alt="Cinque Terre">
+                                                    <h5 class="card-title">claraesa</h5>
+                                                    <span class="stories-time">5 Hour ago</span>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                    
+                                        
+                                        
+                                    </div>
+                            </div>
+                        </div>
+                        <div id="suggestions">
+                                <div class="card position-fixed">
+                                        <div class="side-card" style="width: 18rem;">
+                                            <div id="card-body">
+                                                <div class="stories-header">
+                                                    <h5 class="stories-title">Suggestions for you</h5>
+                                                    <a class="watch_all" href="#">See All</a>
+                                                </div>
+                                                <div class="stories-body">
+                                                    <div class="stories-users">
+                                                        <img src="https://images.unsplash.com/photo-1546820389-44d77e1f3b31?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80" class="img-user rounded-circle" alt="Cinque Terre">
+                                                        <h5 class="card-title">anhVo</h5>
+                                                        <span class="stories-time">New to instagram</span>
+                                                        <button type="button">Follow</button>
+                                                    </div>
+                                                    <div class="stories-users">
+                                                        <img src="https://images.unsplash.com/photo-1542393881816-df51684879df?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=668&q=80" class="img-user rounded-circle" alt="Cinque Terre">
+                                                        <h5 class="card-title">italoabreus</h5>
+                                                        <span class="stories-time">Suggested for you</span>
+                                                        <button type="button">Follow</button>
+                                                    </div>
+                                                    <div class="stories-users">
+                                                        <img src="https://images.unsplash.com/photo-1544348817-5f2cf14b88c8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=668&q=80" class="img-user rounded-circle" alt="Cinque Terre">
+                                                        <h5 class="card-title">marcellalassi</h5>
+                                                        <span class="stories-time">Followed by mkbhd</span>
+                                                        <button type="button">Follow</button>
+                                                    </div>
+                                                    
+                                                </div>
+                                            </div>
+                        
+                                            
+                                            
+                                        </div>
+                                </div>
+                            </div>
+                            <div id="footer">
+                                <div class="position-fixed">
+                                    <a href="#">About Us </a>
+                                    <a href="#">Support </a>
+                                    <a href="#">Press </a>
+                                    <a href="#">API </a>
+                                    <a href="#">Jobs </a>
+                                    <a href="#">Privacy </a>
+                                    <a href="#">Terms </a>
+                                    <a href="#">Directory </a>
+                                    <a href="#">Profiles </a>
+                                    <a href="#">Hashtags </a>
+                                    <a href="#">Language </a>
+                                    <br>
+                                    <a href="#">@ 2019 Instagram </a>
+                                   
+                                </div>
+                            </div>
+                    </div>
+                </div>
+                <div class="row">
+                        <!-- Users pictures -->
+                    <div class="col-sm-12 col-md-12 col-lg-8">
+                            <div class="">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="card-top">
+                                            <img src="https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1631&q=80" class="img-user rounded-circle" alt="Cinque Terre">
+                                            <h5 class="card-title">mkbhd</h5>
+                                        </div>
+                                        
+                                        <div class="image-container">
+                                            <div class="img-fluid">
+                                                    <img class="img-fill" src="https://images.unsplash.com/photo-1464198016405-33fd4527b89d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1592&q=80" class="" alt="...">
+                                            </div>
+                                        </div>
+                                        <div class="action">
+                                                <div class="icon">
+                                                    <i class="far fa-heart"></i>
+                                                    <i class="far fa-comment"></i>
+                                                    <i class="far fa-share-square"></i>
+                                                    <i class="far fa-bookmark"></i>
+                                                </div>
+                                                <div class="likes">
+                                                        <img src="https://yt3.ggpht.com/a-/AAuE7mCmAV0ThJXL7n9dl93TZss2P4siR7dvCUAqTw=s900-mo-c-c0xffffffff-rj-k-no" class="like-user rounded-circle" alt="Cinque Terre">
+                                                        <span>Liked by</span>
+                                                        <h5 class="like-title">mbustamante</h5>
+                                                        <span>and</span>
+                                                        <span>104 others</span>
+                                                       
+                                                </div>
+                                                <div class="comment">
+                                                        <h5 class="comment-title">mkbhd</h5>
+                                                        <span>I loved this vaccation in Iceland with my familly</span>
+                                                        <span class="more-comments">Load more comments</span>
+                                                        <div class="users-comments">                                                 
+                                                            <h4 class="comment-title-user">cbustamante</h4>
+                                                            <span>Amazing</span>
+                                                        </div>
+                                                        <div class="users-comments">                                                 
+                                                            <h4 class="comment-title-user">rafaelcostac3</h4>
+                                                            <span>Enjoy my friend</span>
+                                                        </div>
+                                                        <div class="users-comments">                                                 
+                                                            <h4 class="comment-title-user">ale_ferzs</h4>
+                                                            <span>Such an amazing familly</span>
+                                                        </div>
+                                                        <div class="users-comments">                                                 
+                                                            <h4 class="comment-title-user">anabiabreu</h4>
+                                                            <span>I miss you guys. Enjoy!</span>
+                                                        </div>
+                                                        <span class="time">1 hour ago</span>
+                                                        <hr>     
+                                                </div>
+                                                <form class="comments-form">
+                                                    <input type="text" placeholder="Add a comment..." />
+                                                    <i class="fas fa-ellipsis-h"></i>
+                                                </form>
+                                            </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                <div class="row">
+                        <!-- Users pictures -->
+                    <div class="col-sm-12 col-md-12 col-lg-8">
+                            <div class="">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="card-top">
+                                            <img src="https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1631&q=80" class="img-user rounded-circle" alt="Cinque Terre">
+                                            <h5 class="card-title">mkbhd</h5>
+                                        </div>
+                                        
+                                        <div class="image-container">
+                                            <div class="img-fluid">
+                                                    <img class="img-fill" src="https://images.unsplash.com/photo-1548021682-1720ed403a5b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80" class="" alt="...">
+                                            </div>
+                                        </div>
+                                        <div class="action">
+                                                <div class="icon">
+                                                    <i class="far fa-heart"></i>
+                                                    <i class="far fa-comment"></i>
+                                                    <i class="far fa-share-square"></i>
+                                                    <i class="far fa-bookmark"></i>
+                                                </div>
+                                                <div class="likes">
+                                                        <img src="https://yt3.ggpht.com/a-/AAuE7mCmAV0ThJXL7n9dl93TZss2P4siR7dvCUAqTw=s900-mo-c-c0xffffffff-rj-k-no" class="like-user rounded-circle" alt="Cinque Terre">
+                                                        <span>Liked by</span>
+                                                        <h5 class="like-title">mbustamante</h5>
+                                                        <span>and</span>
+                                                        <span>104 others</span>
+                                                       
+                                                </div>
+                                                <div class="comment">
+                                                        <h5 class="comment-title">mkbhd</h5>
+                                                        <span>I loved this vaccation in Iceland with my familly</span>
+                                                        <span class="more-comments">Load more comments</span>
+                                                        <div class="users-comments">                                                 
+                                                            <h4 class="comment-title-user">cbustamante</h4>
+                                                            <span>Amazing</span>
+                                                        </div>
+                                                        <div class="users-comments">                                                 
+                                                            <h4 class="comment-title-user">rafaelcostac3</h4>
+                                                            <span>Enjoy my friend</span>
+                                                        </div>
+                                                        <div class="users-comments">                                                 
+                                                            <h4 class="comment-title-user">ale_ferzs</h4>
+                                                            <span>Such an amazing familly</span>
+                                                        </div>
+                                                        <div class="users-comments">                                                 
+                                                            <h4 class="comment-title-user">anabiabreu</h4>
+                                                            <span>I miss you guys. Enjoy!</span>
+                                                        </div>
+                                                        <span class="time">1 hour ago</span>
+                                                        <hr>     
+                                                </div>
+                                                <form class="comments-form">
+                                                    <input type="text" placeholder="Add a comment..." />
+                                                    <i class="fas fa-ellipsis-h"></i>
+                                                </form>
+                                            </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+
+
+
+            </div>
+        </div>
+          
+
+
+
+
+
+
+
+
+
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </body>
+</html>
