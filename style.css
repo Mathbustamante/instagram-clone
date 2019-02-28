@@ -51,6 +51,10 @@ body{
     width: 215px;
 }
 
+.form-control:focus{
+    background-color: rgba(70, 70, 70, 0.164);
+}
+
 .watch_all{
     float: right;
     color: #262626;
@@ -302,4 +306,37 @@ body{
 
 #footer > div{
    width: 289px;
+}
+
+#footer span{
+    font-size: 11px;
+    color: #c7c7c7;
+}
+
+@media (max-width: 993px){
+    #current-user .img-user {
+        visibility: hidden;
+    }
+
+    #current-user .card-title {
+        visibility: hidden;
+    }
+
+    #current-user .title-name {
+        visibility: hidden;
+    }
+
+    #content {
+        width:  100%;
+        margin: 88px auto;
+    }
+
+    #footer > div {
+       visibility: hidden;
+    }
+
+    .sidebar{
+        visibility: hidden;
+        position: absolute;
+    }
 }
